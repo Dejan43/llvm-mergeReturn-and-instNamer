@@ -31,7 +31,9 @@ int with_loops(int n) {
 }
 
 int main(){
-    const auto x = complex_conditions(1,2,3);
+    int x,y,z;
+    std::cin >> x >> y >> z;
+    complex_conditions(1,2,3);
     with_loops(x); 
 
     return 0;
