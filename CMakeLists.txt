@@ -1,6 +1,2 @@
-add_llvm_library( LLVMMergeReturnFunctionPass MODULE
-  mergeReturn.cpp
-
-  PLUGIN_TOOL
-  opt
-  )
+add_subdirectory(InstNamer)
+add_subdirectory(MergeReturn)
