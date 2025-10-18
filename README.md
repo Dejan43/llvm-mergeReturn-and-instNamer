@@ -24,7 +24,7 @@ clang -S -emit-llvm test1.cpp -o test1.ll
 opt -load lib/LLVMInstNamer.so -enable-new-pm=0 -dd_instnamer -S test1.ll -o test1_output.ll
 
 ```
-# LLVM Custom Pass – Mergereturn
+# LLVM Custom Pass – Mergereturn 
 This project contains a custom LLVM pass that merges multiple return instructions in a function into a single exit block, simplifying control flow and making LLVM IR easier to analyze and optimize.
 
 ## MergeReturn Pass
