@@ -66,11 +66,11 @@ merged.exit:                                      ; preds = %else, %then
 For functions with return values, a PHI node is automatically created to combine all possible return values.
 
 ## Implementation Details
--Iterates over all basic blocks and collects ReturnInst instructions.
--Creates a new exit block named merged.exit.
--Replaces all original returns with branches to the new exit block.
--If the function returns a value, a PHI node merges all return values.
--Supports both void and typed functions.
+- Iterates over all basic blocks and collects ReturnInst instructions.
+- Creates a new exit block named merged.exit.
+- Replaces all original returns with branches to the new exit block.
+- If the function returns a value, a PHI node merges all return values.
+- Supports both void and typed functions.
 
 
 
